@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Quiz</title>
+    <link rel="stylesheet" href="quiz.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="topic">
+            <label for="category">Choose Category</label>
+            <select name="category" id="category">
+                <option value="" selected disabled>-- Select a category --</option>
+                <option value="27">Animals</option>
+                <option value="21">Sports</option>
+                <option value="9">General Knowledge</option>
+                <option value="17">Science : Nature</option>
+                <option value="18">Science : Computer</option>
+            </select>
+        </div>
+        <div class="difficulty">
+            <label for="complexity">Choose Difficulty</label>
+            <select name="complexity" id="complexity">
+                <option value="" selected disabled>Select Level of Difficulty</option>
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+        </div>
+
+        <div class="quiz-container">
+            <button class="quiz-btn">Start Quiz</button>
+            <p class="show-error hidden" id="show-error"></p>
+        </div>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+
+</html>
